@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- 移动端适配 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- SEO -->
+    <meta name="description"
+          content="冴月ファンタジア茶館官方网站">
+
+    <meta name="theme-color"
+          content="#ffffff">
+
+    <title>冴月ファンタジア茶館</title>
+
+    <!-- Loader -->
+    <link rel="stylesheet"
+          href="public/loader.css"
+          type="text/css">
+
+    <!-- Main Style -->
+    <link rel="stylesheet"
+          href="public/style_welcome_multi-lang.css">
+
+    <style>
+
+    /* 防止手机端横向滚动 */
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
+    /* 安全区域 */
+    body{
+        min-height:100vh;
+        padding:
+            env(safe-area-inset-top)
+            env(safe-area-inset-right)
+            env(safe-area-inset-bottom)
+            env(safe-area-inset-left);
+    }
+
+    /* 容器居中 */
+    .container{
+
+        min-height:100vh;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        padding:20px;
+
+        text-align:center;
+    }
+
+    /* Button adaption */
+    .button_1{
+
+        min-width:180px;
+
+        max-width:90vw;
+    }
+
+    /* Pad */
+    @media (max-width:1024px){
+
+        .container{
+            padding:40px;
+        }
+    }
+
+    /* Phone */
+    @media (max-width:768px){
+
+        .container{
+            padding:24px;
+        }
+
+        .logo_01{
+            font-size:clamp(2rem,8vw,2rem);
+        }
+
+        .slogan_01,
+        .slogan_02{
+            font-size:clamp(1rem,4vw,1rem);
+        }
+
+        .location{
+            font-size:0.95rem;
+        }
+
+        .button_1{
+            width:100%;
+            max-width:320px;
+        }
+    }
+
+    /* 超小屏 */
+    @media (max-width:480px){
+
+        .container{
+            padding:16px;
+        }
+
+        .location{
+            line-height:1.6;
+        }
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<main class="container">
+
+    <!-- Logo -->
+    <header>
+
+        <h1 class="logo_01">
+            冴月ファンタジア茶館
+        </h1>
+
+    </header>
+
+    <!-- Slogan -->
+    <section>
+
+        <p class="slogan_02"></p>
+
+        <p class="location">
+            您当前所连接的服务器位于：
+            Singapore, Asia
+        </p>
+
+        <p class="slogan_01"></p>
+
+    </section>
+
+    <!-- Enter Button -->
+    <nav>
+
+        <button
+            class="button_1"
+            type="button"
+            onclick="window.location.href='pages/home.html'">
+
+            进入官网
+
+        </button>
+
+    </nav>
+
+</main>
+
+</body>
+
+</html>
