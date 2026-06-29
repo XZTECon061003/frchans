@@ -1,0 +1,142 @@
+/* 整个菜单 */
+.top-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/* 按钮 */
+.menu-button {
+    width: auto;
+    height: auto;
+
+    padding: 0;
+    margin: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    box-shadow: none;
+
+    cursor: pointer;
+
+    font-size: 28px;
+    line-height: 1;
+
+    color: #333;
+
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.menu-button:hover {
+    background: #f5f5f5;
+}
+
+/* 弹出菜单 */
+
+.popup-menu {
+
+    position: fixed;
+
+    top: 72px; /* Header高度 */
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #0b2342;
+
+    display: none;
+
+    overflow-y: auto;
+
+    z-index: 999;
+
+}
+
+/*.popup-menu {*/
+/*    display: none;*/
+/*    position: absolute;*/
+/*    top: 50px;*/
+/*    right: 0;*/
+/*    width: 220px;*/
+/*    background: white;*/
+/*    border-radius: 12px;*/
+/*    box-shadow: 0 10px 30px rgba(0, 0, 0, .15);*/
+/*    overflow: hidden;*/
+/*}*/
+
+/* 显示 */
+
+.popup-menu.show {
+    display: block;
+}
+
+/* 菜单项 */
+
+.popup-menu a,
+.menu-item {
+
+    display: block;
+
+    padding: 14px 18px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+    position: relative;
+}
+
+.popup-menu a:hover,
+.menu-item:hover {
+
+    background: #f5f8fd;
+}
+
+/* 分割线 */
+
+.menu-divider {
+
+    height: 1px;
+
+    background: #eee;
+}
+
+/* 子菜单 */
+
+.has-submenu {
+
+    position: relative;
+}
+
+.submenu {
+
+    display: none;
+
+    position: absolute;
+
+    top: 0;
+
+    right: 100%;
+
+    width: 180px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+}
+
+.has-submenu:hover .submenu {
+
+    display: block;
+}
