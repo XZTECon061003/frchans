@@ -1,21 +1,73 @@
 @font-face {
     font-family: "ProjectSerif";
-    src: local("Noto Serif"),
-    url("../assets/fonts/NotoSerif.ttf") format("truetype");
-    font-weight: 100 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "ProjectSerif";
     src: url("../assets/fonts/NotoSerif-Light.ttf") format("truetype");
-    font-weight: 400;
+    font-weight: 300;
+    unicode-range: U+3040-309F,
+    U+30A0-30FF;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "ProjectSerif";
     src: url("../assets/fonts/NotoSerif-Bold.ttf") format("truetype");
     font-weight: 700;
+    unicode-range: U+3040-309F,
+    U+30A0-30FF;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProjectSerif";
+    src: url("../assets/fonts/NotoSerifJP-Light.otf") format("opentype");
+    font-weight: 300;
+    unicode-range: U+3040-309F,
+    U+30A0-30FF;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProjectSerif";
+    src: url("../assets/fonts/NotoSerifJP-Bold.otf") format("opentype");
+    font-weight: 700;
+    unicode-range: U+3040-309F,
+    U+30A0-30FF;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProjectSerif";
+    src: url("../assets/fonts/NotoSerifJP-Medium.otf") format("opentype");
+    font-weight: 500;
+    unicode-range: U+3040-309F,
+    U+30A0-30FF;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProjectSerif";
+    src: url("../assets/fonts/NotoSerifCJKsc-Light.otf") format("opentype");
+    font-weight: 300;
+    unicode-range: U+3040-309F,
+    U+30A0-30FF;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProjectSerif";
+    src: url("../assets/fonts/NotoSerifCJKsc-Medium.otf") format("opentype");
+    font-weight: 500;
+    unicode-range: U+3040-309F,
+    U+30A0-30FF;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ProjectSerif";
+    src: url("../assets/fonts/NotoSerifCJKsc-Regular.otf") format("opentype");
+    font-weight: 400;
+    unicode-range: U+3040-309F,
+    U+30A0-30FF;
+    font-style: normal;
 }
 
 :root{
